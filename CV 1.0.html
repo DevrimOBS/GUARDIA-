@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CV — Devrim Kuzucu</title>
+  <style>
+    :root{--bg:#f6fbff;--card:#ffffff;--accent:#1e88e5;--muted:#6b7280;--border:rgba(30,136,229,0.12)}
+    *{box-sizing:border-box}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#0f1724; margin:0; padding:24px}
+    .container{max-width:900px;margin:0 auto}
+    .card{background:var(--card);border-radius:12px;padding:28px;box-shadow:0 6px 18px rgba(15,23,36,0.06);border:1px solid var(--border)}
+    .header{display:flex;gap:20px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#4fb3ff);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:22px}
+    h1{margin:0;font-size:26px}
+    .meta{margin-top:6px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:20px}
+    .section{margin-bottom:18px}
+    h2{font-size:14px;margin:0 0 10px 0;color:var(--accent);letter-spacing:0.6px}
+    ul{margin:0;padding-left:18px}
+    .chip{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(30,136,229,0.08);color:var(--accent);font-weight:600;font-size:13px;margin-right:8px;margin-bottom:8px}
+    .contact p{margin:6px 0;color:var(--muted);font-size:14px}
+    .experience-item{margin-bottom:12px}
+    .experience-item .meta{font-size:13px}
+    .skills{display:flex;flex-wrap:wrap}
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.avatar{width:72px;height:72px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <div class="avatar">DK</div>
+        <div>
+          <h1>Devrim Kuzucu</h1>
+          <div class="meta">Étudiant / Technicien — Cybersécurité & Systèmes numériques</div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <main>
+          <section class="section">
+            <h2>Profil</h2>
+            <p>Étudiant à Guardia Cybersecurity School. Intérêt marqué pour la cybersécurité, l'horlogerie et la fabrication artisanale. Expériences pratiques en vente et stage en comptabilité.</p>
+          </section>
+
+          <section class="section">
+            <h2>Expérience professionnelle</h2>
+
+            <div class="experience-item">
+              <strong>Stage — Entreprise de comptabilité</strong>
+              <div class="meta">Février 2018 — Juin 2018</div>
+              <p class="meta">Stage en entreprise durant une période totale de 4 mois dans une société de comptabilité.</p>
+            </div>
+
+            <div class="experience-item">
+              <strong>Vendeur — Entreprise de vente de fruits et légumes</strong>
+              <div class="meta">Depuis 2022</div>
+              <p class="meta">Travail en point de vente : accueil clients, gestion des stocks et caisse.</p>
+            </div>
+
+            <div class="experience-item">
+              <strong>Étudiant — Guardia Cybersecurity School</strong>
+              <div class="meta">Depuis janvier 2020</div>
+              <p class="meta">Formation et projets en cybersécurité et informatique.</p>
+            </div>
+
+            <div class="experience-item">
+              <strong>Activité (date indiquée)</strong>
+              <div class="meta">2024 — 2025 / depuis 09/2025</div>
+              <p class="meta">Dates présentes sur le CV source ; à clarifier si nécessaire.</p>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Formation</h2>
+            <p><strong>Baccalauréat Professionnel — Systèmes Numériques</strong></p>
+            <p class="meta">Étudiant à Guardia CS (Guardia Cybersecurity School).</p>
+          </section>
+
+          <section class="section">
+            <h2>Centres d'intérêt</h2>
+            <ul>
+              <li>L’art sartoriale</li>
+              <li>L’horlogerie</li>
+              <li>La cybersécurité / informatique</li>
+              <li>Gestion du temps, organisation de projet et communication</li>
+            </ul>
+          </section>
+        </main>
+
+        <aside>
+          <section class="section contact">
+            <h2>Coordonnées</h2>
+            <p>Adresse : 5 av de la Cime ferme du Temple, Ris-Orangis</p>
+            <p>Email : <a href="mailto:chunigenitachi@gmail.com">chunigenitachi@gmail.com</a></p>
+            <p>Téléphone : 07 66 40 41 10</p>
+          </section>
+
+          <section class="section">
+            <h2>Compétences</h2>
+            <div class="skills">
+              <span class="chip">Gestion du temps</span>
+              <span class="chip">Capacités d'organisation</span>
+              <span class="chip">Communication</span>
+              <span class="chip">Organisation de projet</span>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Langues</h2>
+            <p class="meta">Français — Courant</p>
+            <p class="meta">Anglais — Intermédiaire</p>
+            <p class="meta">Turc — Notions / Langue maternelle</p>
+          </section>
+
+        </aside>
+      </div>
+
+      <footer>
+        <small>Ce CV a été généré automatiquement depuis le fichier fourni. Dites-moi si vous voulez adapter la mise en page, le texte, ou obtenir une version PDF imprimable.</small>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
