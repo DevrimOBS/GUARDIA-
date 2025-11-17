@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Portfolio — Cyberstyle</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&family=Share+Tech+Mono&family=Inter:wght@300;400;600&display=swap');
+
+  :root{
+    --bg:#05060a;
+    --panel:#0c0f17;
+    --panel-light:#111522;
+    --text:#d6e2ff;
+    --accent:linear-gradient(90deg, #6a00ff, #00b7ff);/* violet néon */
+    --accent-glow:0 0 16px rgba(120,0,255,0.7), 0 0 22px rgba(0,180,255,0.6);
+    --radius:14px;
+  }
+  body{
+    margin:0;
+    font-family:'Share Tech Mono', Inter, sans-serif;
+    background:radial-gradient(circle at 50% 0%, #14001f 0%, #0a0220 40%, #02040c 90%);
+    color:var(--text);
+    padding:28px;
+  }
+
+  .container{max-width:900px;margin:0 auto}
+  .card{
+    background:var(--panel);
+    padding:28px;
+    border-radius:var(--radius);
+    border:1px solid rgba(0,210,255,0.08);
+    box-shadow:0 0 25px rgba(0,210,255,0.05);
+    position:relative;
+    overflow:hidden;
+  }
+  .card::before{
+    content:"";
+    position:absolute;
+    top:0;left:0;width:100%;height:100%;
+    background:linear-gradient(120deg, rgba(0,210,255,0.07), transparent 70%);
+    pointer-events:none;
+  }
+
+  h1,h2{
+    font-family:Orbitron, 'Share Tech Mono', sans-serif;
+    letter-spacing:2px;
+    text-transform:uppercase;
+  }
+
+  h1{font-size:26px;margin:0 0 10px;color:var(--accent);text-shadow:var(--accent-glow)}
+  h2{font-size:18px;margin-top:26px;color:var(--accent)}
+
+  .grid{
+    display:grid;
+    grid-template-columns:1fr 280px;
+    gap:25px;
+  }
+
+  .avatar{
+    width:110px;height:110px;border-radius:50%;overflow:hidden;
+    border:2px solid var(--accent); box-shadow:0 0 18px rgba(181,74,255,0.55);
+    box-shadow:0 0 14px rgba(120,0,255,0.5), 0 0 18px rgba(0,180,255,0.45);
+    flex-shrink:0;
+  }
+  .avatar img{width:100%;height:100%;object-fit:cover}
+
+  .profile{
+    display:flex;gap:20px;align-items:center;margin-bottom:20px;
+  }
+
+  .panel{
+    background:var(--panel-light);
+    padding:18px;border-radius:var(--radius);
+    border:1px solid rgba(0,210,255,0.08);
+  }
+
+  p,li{
+    font-family:'Share Tech Mono', Inter, sans-serif;line-height:1.55;color:var(--text);font-size:14px}
+  ul{padding-left:18px;margin:0}
+
+  .skill-bar{
+    background:linear-gradient(90deg, #12031a, #041021);border-radius:999px;height:10px;
+    overflow:hidden;margin-top:6px;
+  }
+  .skill-fill{
+    height:100%;width:0%;background:var(--accent);
+    box-shadow:0 0 14px rgba(120,0,255,0.5), 0 0 18px rgba(0,180,255,0.45);
+    transition:width 1s ease;
+  }
+
+  .chip{
+    display:inline-block;
+    padding:6px 10px;
+    background:linear-gradient(90deg, #12031a, #041021);
+    border:1px solid rgba(0,210,255,0.2);
+    border-radius:999px;font-size:12px;
+    margin:4px 4px 0 0;color:var(--accent);
+  }
+
+  .line{
+    height:1px;width:100%;background:rgba(255,255,255,0.05);
+    margin:14px 0;
+  }
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+
+    <div class="profile">
+      <div class="avatar"><img src="C:\Users\chuni\Pictures\roi et la reine.jpg"></div>
+      <div>
+        <h1>Devrim Kuzucu</h1>
+        <p style="margin:0;color:#9bb7ff">Étudiant • Cybersécurité</p>
+      </div>
+    </div>
+
+    <div class="grid">
+      <main>
+        <div class="panel">
+          <h2>Profil</h2>
+          <p>Étudiant passionné de cybersécurité, d'horlogerie et de technologies. Développe un style et une approche structurée inspirée du monde cyber.</p>
+        </div>
+
+        <div class="panel">
+          <h2>Expérience</h2>
+          <p><strong>Stage en comptabilité</strong> — 2023–2025</p>
+          <div class="line"></div>
+          <p><strong>Vendeur fruits & légumes</strong> — Depuis 2022</p>
+          <div class="line"></div>
+          <p><strong>En cours de formation a GUARDIA cybersécurité</strong></p>
+        </div>
+
+        <div class="panel">
+          <h2>Intérêts</h2>
+          <ul>
+            <li>Horlogerie</li>
+            <li>Cybersécurité</li>
+            <li>Artisanat & design</li>
+            <li>Culture technique</li>
+          </ul>
+        </div>
+      </main>
+
+      <aside>
+        <div class="panel">
+          <h2>Contact</h2>
+          <p>Email : chunigenitachi@gmail.com</p>
+          <p>Téléphone : 07 66 40 41 10</p>
+        </div>
+
+        <div class="panel">
+          <h2>Compétences</h2>
+          <p>Cybersécurité</p>
+          <div class="skill-bar"><div class="skill-fill" data-v="85"></div></div>
+
+          <p>Systèmes & Réseaux</p>
+          <div class="skill-bar"><div class="skill-fill" data-v="75"></div></div>
+
+          <p>Communication</p>
+          <div class="skill-bar"><div class="skill-fill" data-v="78"></div></div>
+        </div>
+
+        <div class="panel">
+          <h2>Atouts</h2>
+          <span class="chip">Organisation</span>
+          <span class="chip">Gestion du temps</span>
+          <span class="chip">Rigueur</span>
+          <span class="chip">Curiosité</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<script>
+  const fills = document.querySelectorAll('.skill-fill');
+  function anim(){
+    fills.forEach(f=>{f.style.width=f.dataset.v+'%'});
+  }
+  setTimeout(anim,300);
+</script>
+
+</body>
+</html>
